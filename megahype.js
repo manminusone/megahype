@@ -8,3 +8,39 @@ editSpan.addEventListener('keypress', function(evt) {
 		evt.preventDefault();
 	}
 })
+
+
+// text generator 
+
+// <text1>, <name> <text2>
+
+var TEXT1 = {
+
+	'literary': [
+		"The author of [nearly 20 books|countless thinkpieces|the definitive chronicle of modern-day politics]",
+		"A successful novelist and instructor",
+	],
+	'tech': [
+		"The founder of [countless startups|the first online apiary|at least one illegal business]",
+		"Known as [the 'Electronic Pete Davidson'|the fastest coder in Italy|the inventor of wireless wire]",
+		"A coder who has worked for many years in the [publishing|medical|construction|food] industry",
+		"A fully trained [Scrum Fellow|Microsoft Teams User Coach|Apple studier|FORTRAN coder|sysadmin]"
+	],
+	'arts': [
+	],
+	'scholar': [
+		"A [Media|Philosophy|Psychology|Semiotics] Fellow at [UCSC|'Yale' 'University'|Rutgers University's Regis Philbin School of Probabilistic Gesticulation]",
+		"A tenured professor at [South Carolina Drive-Thru State University|In-N-Out Burger University]",
+		"An instructor at [what one can assume is an accredited school|Yale's Harvard School of Yale-ing|Big Shot University]"
+	]
+};
+
+var TEXT2 = {
+	'literary': [
+		"is most recently the author of [Make Way For Gumby|Whaddya Nuggnuts|Stories I Made Up|Yeah No|Ugly Keith], [a satire of the 19th century shipping trade|a YA novel|a critique of the European Union]"
+	],
+	'tech': ['is the founder of [CampCamp, a camp for campers|Coding Oldies, a computer training facility for seniors|Don\'t Use That, a hardware recycling facility]'],
+	'arts': [],
+	'scholar': []
+};
+
