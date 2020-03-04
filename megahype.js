@@ -12,6 +12,19 @@ editSpan.addEventListener('keypress', function(evt) {
 
 // text generator 
 
+function chooseOne(match, p1, offset,string) {
+	var choices = p1.split('|');
+	return choices[Math.floor(Math.random() * choices.length)];
+}
+function choose(str) {
+	vqr tmp = str;
+	while (tmp.indexOf('[') >= 0) {
+		tmp = tmp.replace(/\[([^\]]+)\]/, chooseOne);
+	}
+	return tmp;
+}
+
+
 // <text1>, <name> <text2>
 
 var TEXT1 = {
@@ -41,6 +54,6 @@ var TEXT2 = {
 	],
 	'tech': ['is the founder of [CampCamp, a camp for campers|Coding Oldies, a computer training facility for seniors|Don\'t Use That, a hardware recycling facility]'],
 	'arts': [],
-	'scholar': []
+	'scholar': [ 'teaches [madrigal arts|empathetic woodworking|hamburger crafting].']
 };
 
