@@ -6,5 +6,7 @@ body { color: black; background: white; font-family: 'Times New Roman',Times,ser
 #edit-me { white-space: nowrap; min-width: 150px; display: inline-block; }
 .hello-top { color: white; background: red; font-family: 'Helvetica New',Helvetica,sans-serif; font-size: 0.5em; position: absolute; left: 0; right: 0; top: -18px; }
 .hello-bottom { color: white; background: red; position: absolute; left: 0; right: 0; top: 1em; height: 18px; }
-.cp-table {margin-left: auto; margin-right: auto; text-align: left; }
+.cp-table {margin-left: auto; margin-right: auto; text-align: left; border: 2px solid #000; border-radius: 1em; padding: 8px;}
 .cp-table th { text-align: right;  }
+
+select { font-size: 1em; }
