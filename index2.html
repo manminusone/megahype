@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		body { font-family: 'Helvetica New',Helvetica,sans-serif; padding: 0; margin: 0; font-size: 1em; }
+		a, a:visited { color: white; }
+		.header { width: 100%; background: #363; color: white; padding: 18px 18px 18px 64px;}
+		.content { width: 100%; text-align: center; }
+		.hello-tag { display:inline-block; margin-top: 10%; font-size: 2em; }
+		.hello-top { font-size: .5em; font-weight: bolder; border-radius: 1em 1em 0 0; padding: 16px; color: white; background: red; font-family: 'Helvetica New',Helvetica,sans-serif; }
+		.hello-bottom { padding: 8px; font-size: 18px; border-radius: 0 0 1em 1em; color: white; background: red; }
+	</style>
+	<script src="https://kit.fontawesome.com/cc83ba67f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="header">
+		<h1> megahype me! </h1>
+		<p> Need a spectacular introduction? Want a few more credits to your name? <strong>megahype</strong> is here to help! </p>
+	</div>
+	<div class="content">
+		<div class="hello-tag">
+			<div class="hello-top"> hello my name is </div>
+			<div class="hello-body" contenteditable="true" spellcheck="false"> your name here </div>
+			<div class="hello-bottom">
+				<table>
+					<tr>
+						<td>
+							<label for="cp-pronoun"> pronouns </label> 
+						</td>
+						<td>
+							<select id="cp-pronoun">
+								<option value="she-her-her"> she - her </option>
+								<option value="he-him-his"> he - him </option>
+								<option value="they-them-their"> they - them </option>
+							</select>
+						</td>
+						<td rowspan="2">
+							<a href="#"><i class="fas fa-2x fa-arrow-circle-right"></i></a>
+						</td>
+					</tr>
+					<tr> 
+						<td>
+							<label for="cp-field"> field </label>
+						</td>
+						<td>
+							<select id="cp-field">
+								<option> literary </option>
+								<option> tech </option>
+								<option> arts </option>
+								<option> scholar </option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
