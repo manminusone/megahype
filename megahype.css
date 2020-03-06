@@ -2,10 +2,10 @@ body { color: black; background: white; font-family: 'Times New Roman',Times,ser
 .container { text-align: center; }
 .center-div { padding: 10% 0;  }
 .text-span { font-size: 2em; color: #666; line-height: 2; }
-.name-span { font-size: 2em; color: #000; font-weight: bolder; position: relative; }
+.name-span { display: inline-block; font-size: 2em; color: #000; font-weight: bolder; position: relative; }
 #edit-me { white-space: nowrap; min-width: 150px; display: inline-block; }
-.hello-top { color: white; background: red; font-family: 'Helvetica New',Helvetica,sans-serif; font-size: 0.5em; position: absolute; left: 0; right: 0; top: -18px; }
-.hello-bottom { color: white; background: red; position: absolute; left: 0; right: 0; top: 1em; height: 18px; }
+.hello-top { border-radius: 1em 1em 0 0; min-width: 150px; color: white; background: red; font-family: 'Helvetica New',Helvetica,sans-serif; font-size: 0.5em; position: absolute; left: 0; right: 0; top: -18px; }
+.hello-bottom { border-radius: 0 0 1em 1em; min-width: 150px;color: white; background: red; position: absolute; left: 0; right: 0; top: 1em; height: 18px; }
 .cp-table {margin-left: auto; margin-right: auto; text-align: left; border: 2px solid #000; border-radius: 1em; padding: 8px;}
 .cp-table th { text-align: right;  }
 
