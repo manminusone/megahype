@@ -6,54 +6,66 @@
 		a, a:visited { color: white; }
 		.header { width: 100%; background: #363; color: white; padding: 18px 18px 18px 64px;}
 		.content { width: 100%; text-align: center; }
-		.hello-tag { display:inline-block; margin-top: 10%; font-size: 2em; }
-		.hello-top { font-size: .5em; font-weight: bolder; border-radius: 1em 1em 0 0; padding: 16px; color: white; background: red; font-family: 'Helvetica New',Helvetica,sans-serif; }
-		.hello-bottom { padding: 8px; font-size: 18px; border-radius: 0 0 1em 1em; color: white; background: red; }
+
+		.big-text { font-size: 3em;  }
+		.big-text-input { font-size: 3em; }
+		table td { text-align: left;	 }
+		.rad-but { text-align: top;  }
+
 	</style>
-	<script src="https://kit.fontawesome.com/cc83ba67f5.js" crossorigin="anonymous"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 	<div class="header">
 		<h1> megahype me! </h1>
 		<p> Need a spectacular introduction? Want a few more credits to your name? <strong>megahype</strong> is here to help! </p>
 	</div>
+
 	<div class="content">
-		<div class="hello-tag">
-			<div class="hello-top"> hello my name is </div>
-			<div class="hello-body" contenteditable="true" spellcheck="false"> your name here </div>
-			<div class="hello-bottom">
-				<table>
-					<tr>
-						<td>
-							<label for="cp-pronoun"> pronouns </label> 
-						</td>
-						<td>
-							<select id="cp-pronoun">
-								<option value="she-her-her"> she - her </option>
-								<option value="he-him-his"> he - him </option>
-								<option value="they-them-their"> they - them </option>
-							</select>
-						</td>
-						<td rowspan="2">
-							<a href="#"><i class="fas fa-2x fa-arrow-circle-right"></i></a>
-						</td>
-					</tr>
-					<tr> 
-						<td>
-							<label for="cp-field"> field </label>
-						</td>
-						<td>
-							<select id="cp-field">
-								<option> literary </option>
-								<option> tech </option>
-								<option> arts </option>
-								<option> scholar </option>
-							</select>
-						</td>
-					</tr>
-				</table>
-			</div>
-		</div>
+		<table>
+			<tr>
+				<td> 
+					<p class="big-text">
+						<label for="my-name">1. Your name:</label>
+					</p>
+				</td>
+				<td>
+					<input type="text" id="my-name" name="my-name" class="big-text-input" placeholder="hello my name is">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="big-text">
+						<label for="my-pronoun">2. Your pronouns: </label>
+					</p>
+				</td>
+				<td>
+					<select id="my-pronoun" name="my-pronoun" class="big-text-input">
+						<option value="she-her-hers">she / her </option>
+						<option value="he-him-his">he / him </option>
+						<option value="they-them-theirs" selected> they / them </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="big-text">
+						<label for="my-field">3. Your field of study:</label>
+					</p>
+				</td>
+				<td>
+					<p class="big-text">
+					<i class="fa fa-book" aria-hidden="true"></i> <input type="radio" class="rad-but" id="my-field-1" name="my-field" value="literary" checked> Literary 
+					<br />
+					<i class="fa fa-laptop" aria-hidden="true"></i> <input type="radio" class="rad-but"  id="my-field-2" name="my-field" value="tech"> Tech 
+					<br />
+					<i class="fa fa-star" aria-hidden="true"></i> <input type="radio" class="rad-but" id="my-field-2" name="my-field" value="arts"> Arts 
+					<br />
+					<i class="fa fa-graduation-cap" aria-hidden="true"></i> <input type="radio" class="rad-but" id="my-field-2" name="my-field" value="scholar"> Scholar 
+				</p>
+				</td>
+			</tr>
+		</table>
 	</div>
 </body>
 </html>
