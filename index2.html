@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
 	<style>
-		body { font-family: 'Helvetica New',Helvetica,sans-serif; padding: 0; margin: 0; font-size: 1em; }
+		body { font-family: 'Helvetica Now Text',Helvetica,sans-serif; padding: 0; margin: 0; font-size: 1em; }
 		a, a:visited { color: white; }
 		.header { width: 100%; background: #363; color: white; padding: 18px 18px 18px 64px;}
 		.content { width: 100%; text-align: center; }
 
 		.big-text { font-size: 3em;  }
-		.big-text-input { font-size: 3em; }
+		.big-text-input { font-size: 2em; font-family: 'Helvetica Now Text',Helvetica,sans-serif; }
 		table td { text-align: left;	 }
-		.rad-but { text-align: top;  }
+
+		a.radio-span { border: 1px solid black; color: black; text-decoration: none; }
+		a.radio-span.checked { background: green; color: white; }
+
 
 	</style>
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -55,13 +58,13 @@
 				</td>
 				<td>
 					<p class="big-text">
-					<i class="fa fa-book" aria-hidden="true"></i> <input type="radio" class="rad-but" id="my-field-1" name="my-field" value="literary" checked> Literary 
+					<a href="#" class="radio-span checked"> <i class="fa fa-book" aria-hidden="true"></i>  Literary </a>
 					<br />
-					<i class="fa fa-laptop" aria-hidden="true"></i> <input type="radio" class="rad-but"  id="my-field-2" name="my-field" value="tech"> Tech 
+					<a href="#" class="radio-span"><i class="fa fa-laptop" aria-hidden="true"></i> Tech </a>
 					<br />
-					<i class="fa fa-star" aria-hidden="true"></i> <input type="radio" class="rad-but" id="my-field-2" name="my-field" value="arts"> Arts 
+					<a href="#" class="radio-span"><i class="fa fa-star" aria-hidden="true"></i> Arts </a>
 					<br />
-					<i class="fa fa-graduation-cap" aria-hidden="true"></i> <input type="radio" class="rad-but" id="my-field-2" name="my-field" value="scholar"> Scholar 
+					<a href="#" class="radio-span"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Scholar </a>
 				</p>
 				</td>
 			</tr>
