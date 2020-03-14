@@ -58,17 +58,23 @@
 				</td>
 				<td>
 					<p class="big-text">
-					<a href="#" class="radio-span checked"> <i class="fa fa-book" aria-hidden="true"></i>  Literary </a>
+					<a href="#" class="radio-span checked" data-field="literary"> <i class="fa fa-book" aria-hidden="true"></i>  Literary </a>
 					<br />
-					<a href="#" class="radio-span"><i class="fa fa-laptop" aria-hidden="true"></i> Tech </a>
+					<a href="#" class="radio-span" data-field="tech"><i class="fa fa-laptop" aria-hidden="true"></i> Tech </a>
 					<br />
-					<a href="#" class="radio-span"><i class="fa fa-star" aria-hidden="true"></i> Arts </a>
+					<a href="#" class="radio-span" data-field="arts"><i class="fa fa-star" aria-hidden="true"></i> Arts </a>
 					<br />
-					<a href="#" class="radio-span"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Scholar </a>
+					<a href="#" class="radio-span" data-field="scholar"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Scholar </a>
 				</p>
 				</td>
 			</tr>
 		</table>
 	</div>
+	<script language="JavaScript">
+		var foo = document.getElementsByClassName('radio-span');
+		for (var i = 0; i < foo.length; ++i)
+			foo.item(i).addEventListener('click', function(evt) { let foo = document.getElementsByClassName('radio-span'); for (let iter = 0; iter < foo.length; ++iter) foo.item(iter).classList.remove('checked'); evt.target.classList.add('checked'); });
+		document.getElementById('my-name').addEventListener()
+	</script>
 </body>
 </html>
