@@ -2,6 +2,11 @@ const nameform = document.getElementById('formit');
 const yourname = document.getElementById('yourname');
 const hypediv = document.getElementById('hypediv');
 
+const pronouns = {
+    "male": { "s": "he", "S": "He", "o": "him", "p": "his", "P": "His", "x": "himself" },
+    "female": { "s": "she", "S": "She", "o": "her", "p": "her", "P": "Her", "x": "herself" },
+    "plural": { "s": "they", "S": "They", "o": "them", "p": "their", "P": "Their", "x": "themself" }
+};
 var filereq = new XMLHttpRequest();
 var grammar;
 
@@ -44,15 +49,23 @@ function makeIntro() {
     return newstr;
 }
 
+function assignPronouns(str, name, prnkey) {
+    console.log(prnkey, pronouns[prnkey]);
+    str = str.replace('%n', name);
+    for (var i in pronouns[prnkey]) {
+        str = str.replace(new RegExp('%'+i, 'g'), pronouns[prnkey][i]);
+    }
+    return str;
+}
 filereq.addEventListener('load', parseJson);
 filereq.addEventListener('error', errorJson);
 filereq.open('GET','megahype.json');
 filereq.send();
 
 function logsubmit(evt) {
-    grammar['name'] = yourname.value;
-    // console.log(evt);
-    hypediv.innerHTML = '<p> ' + makeIntro() + ' </p>';
+    introStr = makeIntro();
+    introStr = assignPronouns(introStr, yourname.value, 'male');
+    hypediv.innerHTML = '<p> ' + introStr + ' </p>';
     evt.preventDefault();
 }
 
