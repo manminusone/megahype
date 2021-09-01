@@ -1,0 +1,16 @@
+{
+    "main": [
+        "{openclause}, {name} {object}."
+    ],
+    "openclause": [
+        "An avowed vegetarian",
+        "The recipient of over 50 awards for %o scientific breakthroughs"
+    ],
+    "object": [
+        "is the author of several bestsellers, including {bookname}"
+    ],
+    "bookname": [
+        "Who Goes First? Leadership in the 21st Century",
+        "Suddenly I was Afraid: Lessons on the Playa at Burning Man"
+    ]
+}
