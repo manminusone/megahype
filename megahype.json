@@ -1,0 +1,79 @@
+{
+    "main": [
+        "{openclause}, %n {object}.",
+        "{childintro}. %S {object}."
+    ],
+    "openclause": [
+        "An avowed vegetarian",
+        "The recipient of over 50 awards for %p scientific breakthroughs"
+    ],
+    "object": [
+        "is the author of several bestsellers, including {bookname}",
+        "recently received a fellowship from {univ}",
+        "recently joined {org}"
+    ],
+    "org": [
+        "the President's Council of {univ} as {univposition}", 
+        "a {adj} organization located in {loc}"
+    ],
+    "univ": [
+        "Tufts University",
+        "Brown University",
+        "UIC",
+        "UNLV",
+        "Marquette University",
+        "Georgia Tech",
+        "Grinnell College"
+    ],
+    "univposition": [
+        "an adjunct professor",
+        "an adjunct fellow"
+    ],
+    "adj": [
+        "presigious",
+        "elite",
+        "world-renowned"
+     ],
+     "loc": [
+         "Washington, DC",
+         "the tri-state area",
+         "a West Coast amusement park"
+     ],
+    "bookname": [
+        "Who Goes First? Leadership in the 21st Century",
+        "Suddenly I was Afraid: Lessons on the Playa at Burning Man"
+    ],
+    "childhome": [
+        "a busy household with 17 brothers and sisters",
+        "a truck stop renovated for apartments",
+        "a relatively clean dumpster"
+    ],
+    "childcity": [
+        "Passaic, NJ",
+        "Brooklyn",
+        "the outskirts of Pyramus, NJ",
+        "an unincorporated township in Rhode Island"
+    ],
+    "childachieve": [
+        "first came to national prominence by {childfame}", 
+        "finished %p schooling by the time %s was 21",
+        "excelled in tennis camp and was a national champion by the age of seven",
+        "received several patents on modifications to existing medical equipment and surgical procedures by the age of 12"
+    ],
+    "childschool": [
+        "kindergarten",
+        "grade school",
+        "middle school",
+        "high school"
+    ],
+    "childtask": [
+        "piano recitals",
+        "several languages",
+        "Olympic-level high diving",
+        "grandmaster chess"
+    ],
+    "childintro": [
+        "Growing up in {childhome} in {childcity}, %n {childachieve}",
+        "A child prodigy, %n achieved proficiency in {childtask} by the time %s finished {childschool}"
+    ]
+}
