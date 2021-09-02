@@ -1,55 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> megahype me </title>
-<link rel="stylesheet" href="megahype.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta charset="UTF-8">
+	<title> megahype me </title>
+	<link rel="stylesheet" href="megahype.css">
 </head>
 <body>
-	<div class="container">
-		<div class="center-div">
-		<span id="before-name" class="text-span">
-			 
-		</span>
-		<div class="name-span">
-			<span id="edit-me" contenteditable="true" spellcheck="false">your name here</span> 
-			<span class="hello-top"> hello my name is </span>
-			<span class="hello-bottom"> </span>
+	<div class="tabin">
+		<h1> Megahype Me!</h1>
+		<div class="content">
+			<div id="hypediv">
+
+			</div>
+			<form id="formit">
+				<input type="text" name="yourname" id="yourname" placeholder="Your name here">
+			</form>
+			<p>
+				Type in your name, hit Enter, and get an instant introduction!
+			</p>
+
 		</div>
-		<span id="after-name" class="text-span">
-			
-		</span>
-	</div>
-		<form>
-	<div class="control-panel">
-			<table class="cp-table">
-				<tr>
-					<td>
-						<select id="cp-gender">
-							<option value="she-her-her">she - her </option>
-							<option value="he-him-his">he - him </option>
-							<option value="they-them-their" selected> they - them </option>
-						</select>
-					</td>
-					<th>
-						<label for="cp-gender"> gender </label>
-					</th>
-				</tr>
-				<tr>
-					<td>
-						<select id="cp-topic">
-							<option value="literary"> literary </option>
-							<option value="tech"> tech </option>
-							<option value="arts"> arts </option>
-							<option value="scholar"> scholar </option>
-						</select>
-					</td>
-					<th>
-						<label for="cp-topic"> field for introduction </label>
-					</th>
-				</tr>
-			</table>
-	</div>
-		</form> 
 	</div>
 	<script type="text/javascript" src="megahype.js"></script>
 </body>
