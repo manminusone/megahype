@@ -3,18 +3,31 @@
         "{openclause}, %n {object}.",
         "{childintro}. %S {object}."
     ],
+    "artworld": [
+        "X-generational wave poetry slam",
+        "Neo-scrimshaw",
+        "straightedge anime",
+        "digital greeting card",
+        "Extreme User Design Theory",
+        "Dangerous Scrum",
+        "underground project management",
+        "analog-to-digital film",
+        "minimalist hiking",
+        "Angry Farmers confrontational art/attack"
+    ],
     "openclause": [
         "An avowed vegetarian",
-        "The recipient of over 50 awards for %p scientific breakthroughs"
+        "The recipient of over 50 awards for %p scientific breakthroughs",
+        "One of the most original voices to emerge from the {artworld} community"
     ],
     "object": [
         "is the author of several bestsellers, including {bookname}",
         "recently received a fellowship from {univ}",
-        "recently joined {org}"
+        "recently joined {org} as {position}"
     ],
     "org": [
         "the President's Council of {univ} as {univposition}", 
-        "a {adj} organization located in {loc}"
+        "a/an {adj} organization located in {loc}"
     ],
     "univ": [
         "Tufts University",
@@ -25,23 +38,38 @@
         "Georgia Tech",
         "Grinnell College"
     ],
-    "univposition": [
+    "position": [
         "an adjunct professor",
-        "an adjunct fellow"
+        "an adjunct fellow",
+        "a fellow adjunct",
+        "an adjunct adjunct fellow adjunct",
+        "an adjunct janitor",
+        "a fellow fellow adjunct"
     ],
     "adj": [
-        "presigious",
+        "prestigious",
         "elite",
-        "world-renowned"
+        "world-renowned",
+        "award-eligible",
+        "super-duper"
      ],
      "loc": [
          "Washington, DC",
          "the tri-state area",
-         "a West Coast amusement park"
+         "a West Coast amusement park",
+         "the Northeast",
+         "the state capitol",
+         "a spooky abandoned amusement park"
      ],
     "bookname": [
-        "Who Goes First? Leadership in the 21st Century",
-        "Suddenly I was Afraid: Lessons on the Playa at Burning Man"
+        "What's That? The History of Questions",
+        "Well Now: The History of Wells",
+        "Oh Dear: My Life Spent Hiding Outside",
+        "That's Write: My Life as a Writer",
+        "Joke Title: My Life as a Writer Making Up Fake Book Names",
+        "Fat City: The World of Lard",
+        "Life in a Lunchbox: The Story of Wax Paper",
+        "Ceiling Fans and their Stories"
     ],
     "childhome": [
         "a busy household with 17 brothers and sisters",
@@ -53,6 +81,13 @@
         "Brooklyn",
         "the outskirts of Pyramus, NJ",
         "an unincorporated township in Rhode Island"
+    ],
+    "childfame": [
+        "winning the National Spelling Bee 27 years in a row",
+        "being awarded a Nobel Prize at birth",
+        "being able to recite all letters of the alphabet at age 17",
+        "becoming a licensed drivier at 9 months of age",
+        "piloting a steam ship at the age of 7"
     ],
     "childachieve": [
         "first came to national prominence by {childfame}", 
