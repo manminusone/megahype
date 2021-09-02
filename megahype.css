@@ -1,9 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
+
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  } 
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
 body {
     background: red;
     color: white;
     font-size: 16px;
+    height: 100%;
+    width: 100%;
 }
 
 .tabin {
@@ -19,8 +32,8 @@ body {
     padding: 12px;
 }
 
-.content input {
-    font-size: 3em; 
+#formit input {
+    font-size: 3.0vw; 
     font-family: 'Zilla Slab',serif;
     padding: 4px; 
     border: none;
@@ -30,9 +43,47 @@ body {
 h1 {
     font-family: "Spicy Rice", cursive;
     margin: 0;
-    font-size: calc(64px + 0.5vw);
+    font-size: 6vmax;
 }
 
 .content p {
-    font-size: 2em;
+    font-size: 3.0vh;
     font-family: 'Zilla Slab',serif;
+}
+
+nav {
+    white-space: nowrap;
+    padding-top: 2.0vh;
+    padding-bottom: 2.0vh;
+    background: red;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  nav {
+    position: -webkit-sticky;
+	position: sticky;
+	bottom: 0;
+  }
+}
+nav ul li { display: inline; }
+nav ul li a {
+    float: left; 
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  nav ul li a.current {
+    background: black;
+  }
+  main {
+  }
+
+  form { 
+      display: inline;
+  }
