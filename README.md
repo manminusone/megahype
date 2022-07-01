@@ -1,6 +1,11 @@
-# megahype
-## when you need a stellar introduction
+# Give Up GitHub
 
-This site is going to be a very simple HTML/CSS/JS resource that will auto-generate a very important-sounding introduction for your next public appearance. Feel like your life isn't exciting enough? Looking for some impressive credentials? Choose megahype!
+This project has given up GitHub.  ([See Software Freedom Conservancy's *Give Up  GitHub* site for details](https://GiveUpGitHub.org).)
 
+You can now find this project at https://codeberg.org/manminusone/megahype instead.
 
+Any use of this project's code by GitHub Copilot, past or present, is done without our permission.  We do not consent to GitHub's use of this project's code in Copilot.
+
+Join us; you can [give up GitHub](https://GiveUpGitHub.org) too!
+
+![Logo of the GiveUpGitHub campaign](https://sfconservancy.org/img/GiveUpGitHub.png)
